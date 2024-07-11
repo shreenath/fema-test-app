@@ -7,8 +7,11 @@ import io
 
 # Streamlit configuration for external access
 st.set_page_config(page_title="FEMA Disaster Declarations for Community Organizers", layout="wide")
+#st.write("Census API Key: ", st.secrets["db_census_api"])
+
 
 # Census API key
+#CENSUS_API_KEY = "db_census_api"
 CENSUS_API_KEY = "0522c0d0532fd5a530a4cb82419a270033894e74"
 
 # URL for the 2019 Gazetteer Files
