@@ -1,19 +1,48 @@
-# 🎈 Blank app template
+# FEMA Disaster Declarations App for Community Organizers
 
-A simple Streamlit app template for you to modify!
+   This Streamlit app displays recent FEMA disaster declarations and allows community organizers to access relevant information about affected areas, eligibility, and zip codes.
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+   ## Features
 
-### How to run it on your own machine
+   - View recent FEMA disaster declarations
+   - Filter disasters by state and type
+   - See detailed information about each disaster, including affected counties and zip codes
+   - Filter and download data for specific disasters
 
-1. Install the requirements
+   ## How to Use
 
-   ```
-   $ pip install -r requirements.txt
-   ```
+   1. Select a state from the dropdown menu
+   2. Choose a specific disaster from the list of declarations for that state
+   3. View detailed information about the selected disaster
+   4. Use the filter options to narrow down the data
+   5. Download the filtered data as a CSV file
 
-2. Run the app
+   ## Live Demo
 
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+   You can access the live version of this app at: [Your Streamlit Cloud URL will go here]
+
+   ## Local Development
+
+   To run this app locally:
+
+   1. Clone this repository
+   2. Install the required packages:
+      ```
+      pip install -r requirements.txt
+      ```
+   3. Run the Streamlit app:
+      ```
+      streamlit run streamlit_app.py
+      ```
+
+   ## Data Source
+
+   This app uses data from the FEMA Disaster Declarations Summary API and the Census Bureau Gazetteer Files.
+
+   ## Contributing
+
+   Contributions to improve the app are welcome. Please feel free to submit a Pull Request.
+
+   ## License
+
+   This project is licensed under the MIT License - see the LICENSE file for details.
