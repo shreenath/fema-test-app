@@ -7,12 +7,11 @@ import io
 
 # Streamlit configuration for external access
 st.set_page_config(page_title="FEMA Disaster Declarations for Community Organizers", layout="wide")
-#st.write("Census API Key: ", st.secrets["db_census_api"])
+st.write("Census API Key: ", st.secrets["CENSUS_API_KEY"])
 
 
 # Census API key
-#CENSUS_API_KEY = "db_census_api"
-CENSUS_API_KEY = "0522c0d0532fd5a530a4cb82419a270033894e74"
+CENSUS_API_KEY = st.secrets["CENSUS_API_KEY"]
 
 # URL for the 2019 Gazetteer Files
 GAZETTEER_URL = "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2019_Gazetteer/2019_Gaz_zcta_national.zip"
@@ -39,7 +38,7 @@ def get_fema_disasters(last_month=True):
     }
     
     try:
-        response = requests.get(url)
+        response = requests.get(url, params=params)
         response.raise_for_status()
         
         data = response.json()
